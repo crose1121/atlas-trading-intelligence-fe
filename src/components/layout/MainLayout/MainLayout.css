@@ -1,0 +1,31 @@
+.logo {
+  flex: 1;
+}
+
+.app-slogan {
+  font-style: italic;
+  font-size: 12px;
+}
+
+.navbar {
+  font-size: 18px;
+  padding: 1.2rem;
+}
+
+/* Prevent header links from causing layout shift on hover by
+   keeping font-weight constant and using transform/text-shadow */
+.MuiToolbar-root a,
+.MuiAppBar-root a {
+  font-weight: 500;
+  display: inline-block;
+  transition:
+    transform 0.12s ease,
+    color 0.12s ease,
+    text-shadow 0.12s ease;
+}
+.MuiToolbar-root a:hover,
+.MuiAppBar-root a:hover {
+  transform: translateY(-1px) scale(1.02);
+  color: var(--primary);
+  text-shadow: 0 0 1px currentColor;
+}
