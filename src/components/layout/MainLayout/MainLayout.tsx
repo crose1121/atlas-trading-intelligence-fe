@@ -1,4 +1,3 @@
-import React from "react";
 import "./MainLayout.css";
 import { Box, CssBaseline } from "@mui/material";
 import Nav from "./Nav";
